@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - SYNEROM HEX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Dark Theme Background */
+        body {
+            background-color: #050505;
+            background-image: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #000000 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Galaxy Background Canvas Removed -->
+    <!-- <canvas id="galaxy-canvas"></canvas> -->
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo" id="navbar-logo-trigger" style="cursor: pointer;"><img src="logo.jpg"
+                alt="SYNEROM HEX Logo">SYNEROM HEX</div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about-us">About</a></li>
+                <li><a href="services.html" style="color: #fff;">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1: Header -->
+        <section class="content-section">
+            <div class="content-container">
+                <div class="section-header center-text">
+                    <div class="section-badge reveal-on-scroll">Solutions</div>
+                    <h1 class="huge-title reveal-on-scroll delay-100">Our Services</h1>
+                    <p class="section-desc reveal-on-scroll delay-200">
+                        We provide end-to-end Software and Hardware solutions powered by AI.
+                    </p>
+                </div>
+            </div>
+
+            <div class="scroll-indicator reveal-on-scroll delay-300">
+                <span>Explore Details</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Software -->
+        <section class="content-section" id="software">
+            <div class="content-container">
+                <div class="section-header reveal-on-scroll center-text" style="margin-bottom: 60px;">
+                    <h2 class="section-title">SOFTWARE</h2>
+                    <p class="section-desc" style="margin: 0 auto;">Building intelligent digital ecosystems.</p>
+                </div>
+                <div class="stats-grid reveal-on-scroll">
+                    <div class="glass-card">
+                        <div class="stat-icon">⚡</div>
+                        <h3>Web Development</h3>
+                        <p>High-performance, futuristic web applications tailored to your brand.</p>
+                    </div>
+                    <div class="glass-card">
+                        <div class="stat-icon">🧠</div>
+                        <h3>AI Integration</h3>
+                        <p>Advanced machine learning models and intelligent automation systems.</p>
+                    </div>
+                    <div class="glass-card">
+                        <div class="stat-icon">☁️</div>
+                        <h3>Cloud Architecture</h3>
+                        <p>Scalable, secure, and resilient cloud infrastructure solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Hardware -->
+        <section class="content-section" id="hardware">
+            <div class="content-container">
+                <div class="section-header reveal-on-scroll center-text" style="margin-bottom: 60px;">
+                    <h2 class="section-title">HARDWARE</h2>
+                    <p class="section-desc" style="margin: 0 auto;">Smart hardware for the connected world.</p>
+                </div>
+                <div class="stats-grid reveal-on-scroll" style="justify-content: center;">
+                    <div class="glass-card">
+                        <div class="stat-icon">🔌</div>
+                        <h3>IoT Solutions</h3>
+                        <p>Smart device ecosystems and industrial internet of things integration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer reveal-on-scroll">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo"><img src="logo.jpg" alt="SYNEROM HEX Logo">SYNEROM HEX</div>
+                <p id="footer-branding" style="cursor: default;">SYNEROM HEX – Automate Smarter, Optimize Faster, and
+                    Grow Stronger.</p>
+            </div>
+
+            <div class="footer-links-group">
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services.html#ai-automation">Process</a></li>
+                        <li><a href="blog.html">Case studies</a></li>
+                        <li><a href="index.html#values">Benefits</a></li>
+                        <li><a href="contact.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about-us">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Socials</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="galaxy.js"></script> -->
+    <script>
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('reveal-visible');
+            });
+        }, observerOptions);
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => observer.observe(el));
+
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const logoTrigger = document.getElementById('navbar-logo-trigger');
+
+        if (logoTrigger) {
+            logoTrigger.addEventListener('click', () => {
+                window.location.href = 'login.html';
+            });
+        }
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu when clicking on a link
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+        }
+
+        // Hidden Admin Trigger
+        const footerBranding = document.getElementById('footer-branding');
+        if (footerBranding) {
+            footerBranding.addEventListener('dblclick', () => {
+                window.location.href = 'login.html';
+            });
+        }
+    </script>
+</body>
+
+</html>
