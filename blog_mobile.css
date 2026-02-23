@@ -1,0 +1,45 @@
+/* Mobile Responsiveness for Blog Page */
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        margin-top: 30px !important;
+    }
+
+    .blog-card h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .blog-card p {
+        font-size: 0.9rem !important;
+    }
+
+    .download-btn {
+        padding: 12px 24px !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-grid {
+        gap: 15px !important;
+    }
+
+    .blog-image {
+        height: 180px !important;
+    }
+
+    .blog-card h3 {
+        font-size: 1.1rem !important;
+    }
+
+    .exe-badge {
+        font-size: 0.7rem !important;
+        padding: 5px 10px !important;
+    }
+
+    .download-btn {
+        padding: 10px 20px !important;
+        font-size: 0.85rem !important;
+    }
+}
